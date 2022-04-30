@@ -57,3 +57,22 @@ h2 {
     width: 100%;
     height:100%;
 }
+
+#Upload {
+    width: 50%;
+    height: 100%;
+}
+
+#hexagon::before {
+    content: "\2B22";
+    display:block;
+    font-size:135px;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    -webkit-text-stroke: 3px #fff; /* width and color */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*background-image: ; */ /* PEGAR DO PYTHON */
+  }
