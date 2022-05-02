@@ -16,10 +16,29 @@ h2 {
     color: #a9a9a9;
     font-size: 20px;
     font-weight: bold;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
 
     margin-top: -40px;
+}
+
+h3 {
+    color: #a9a9a9;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.vl {
+    position: absolute;
+    width: 314.01px;
+    height: 0px;
+    left: 160px;
+    top: 190px;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(90.36deg);
 }
 
 #head {
@@ -44,6 +63,8 @@ h2 {
 }
 
 #UO {
+    position: relative;
+    left: 60px;
     width: 100%;
     height: 50%;
 }
@@ -63,16 +84,23 @@ h2 {
     height: 100%;
 }
 
-#hexagon::before {
-    content: "\2B22";
-    display:block;
-    font-size:135px;
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-    -o-transform: rotate(-30deg);
-    transform: rotate(-30deg);
-    -webkit-text-stroke: 3px #fff; /* width and color */;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /*background-image: ; */ /* PEGAR DO PYTHON */
-  }
+#Upload_text {
+    position: absolute;
+    left: 100px;
+    top: 240px;
+}
+
+#View_Raw {
+    position: absolute;
+    left: 470px;
+    top: 240px;
+}
+
+#image_up {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45px;
+    top: 90px;
+}
