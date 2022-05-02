@@ -3,7 +3,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href='home.css'>
+        {% load static %}
+        <link rel="stylesheet" href='static/home.css'>
         <title>Data Rudder Case</title>
     </head>
 
@@ -14,24 +15,21 @@
         </div>
 
         <div id= 'left'>
-        
             <div id = 'UO'>
-
-                <div id = 'Upload'>
-                    <div id = 'hexagon'></div>
-                    <h3>Upload</h3>
-                </div>
-
-                <div id = 'Output'>
+                <form id = 'Upload'>
+                    <input type="image" src="static/upload.jpg" id="image_up">
+                    <h3 id="Upload_text">Upload</h3>
+                </form>
                 
+                <div class="vl"></div>
+                <div id = 'Output'>
+                    <div class = 'hexagon' id = 'hex2'></div>
+                    <h3 id="View_Raw">View Raw</h3>
                 </div>
-
             </div>
-    
             <div id = 'NN'>
                 <canvas id="NN_canvas" width=100% height=100%></canvas>
             </div>
-
         </div>
 
         <div id= 'right'>
