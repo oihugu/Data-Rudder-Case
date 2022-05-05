@@ -6,4 +6,4 @@ import os
 
 
 class Element(models.Model):
-    element_Img = models.ImageField(upload_to='images/', storage=mfs)
+    element_Img = models.ImageField(upload_to='home/static/images/', storage=mfs)
