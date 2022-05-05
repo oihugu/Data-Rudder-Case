@@ -1,4 +1,4 @@
-from .utils import mfs, resnet18
+from .utils import mfs
 from django.db import models
 import os
 # Create your models here.
