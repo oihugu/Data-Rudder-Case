@@ -2,10 +2,12 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+import json
 
 def main():
     """Run administrative tasks."""
+    key = json.load(open('keys.json'))['django']
+    os.environ.setdefault('DJANGO_SECRET_KEY', key)
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DataRudderCase.settings')
     try:
         from django.core.management import execute_from_command_line

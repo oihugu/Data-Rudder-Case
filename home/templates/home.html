@@ -1,45 +1,10 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% load static %}
-        <link rel="stylesheet" href='static/home.css'>
-        <title>Data Rudder Case</title>
-    </head>
+<head>
+</head>
 
-    <body>
-        <div id= 'Head'>
-            <h1>DATA RUDDER CASE</h1>
-            <h2>HUGO AMORIM MARTINS</h2>
-        </div>
-
-        <div id= 'left'>
-            <div id = 'UO'>
-                <form id = 'Upload'>
-                    <input type="image" src="static/upload.jpg" id="image_up">
-                    <h3 id="Upload_text">Upload</h3>
-                </form>
-                
-                <div class="vl"></div>
-                <div id = 'Output'>
-                    <div class = 'hexagon' id = 'hex2'></div>
-                    <h3 id="View_Raw">View Raw</h3>
-                </div>
-            </div>
-            <div id = 'NN'>
-                <canvas id="NN_canvas" width=100% height=100%></canvas>
-            </div>
-        </div>
-
-        <div id= 'right'>
-            <div id = 'Plotly'>
-
-            </div>
-        </div>
-        
-
-    </body>
-
-</html>
-
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+      </form>
+</body>
