@@ -8,6 +8,7 @@ idna==3.3
 kiwisolver==1.4.2
 matplotlib==3.5.2
 numpy==1.21.6
+oauthlib==3.2.0
 packaging==21.3
 pandas==1.3.5
 Pillow==9.1.0
@@ -16,11 +17,13 @@ pyparsing==3.0.8
 python-dateutil==2.8.2
 pytz==2022.1
 requests==2.27.1
+requests-oauthlib==1.3.1
 six==1.16.0
 sqlparse==0.4.2
 tenacity==8.0.1
 torch==1.11.0
 torchvision==0.12.0
+tweepy==4.9.0
 typing_extensions==4.2.0
 urllib3==1.26.9
 wincertstore==0.2
