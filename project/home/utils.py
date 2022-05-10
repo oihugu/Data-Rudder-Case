@@ -30,12 +30,12 @@ class ResNet():
             transforms.Normalize(mean=[0.485, 0.456, 0.406],std=[0.229, 0.224, 0.225] )
             ])
             
-        test_data_path = "../test/"
-        test_data = torchvision.datasets.ImageFolder(root=test_data_path,transform=self.img_test_transforms, is_valid_file=self.check_image)
-        batch_size=32
-        num_workers = 6
-        test_data_loader = torch.utils.data.DataLoader(test_data, batch_size=batch_size, shuffle=False, num_workers=num_workers)
-        labels, predictions = self.test(os.listdir(settings.MEDIA_ROOT))
+        #test_data_path = "../test/"
+        #test_data = torchvision.datasets.ImageFolder(root=test_data_path,transform=self.img_test_transforms, is_valid_file=self.check_image)
+        #batch_size=32
+        #num_workers = 6
+        #test_data_loader = torch.utils.data.DataLoader(test_data, batch_size=batch_size, shuffle=False, num_workers=num_workers)
+        #labels, predictions = self.test(os.listdir(settings.MEDIA_ROOT))
         
     
     def make_prediction(self, image_path):

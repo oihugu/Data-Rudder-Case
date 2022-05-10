@@ -17,7 +17,7 @@ def home(request):
             form.save()
             data['image_path'] = 'static/images/' + form.cleaned_data['element_Img'].name
             data['prediction'] = resnet.make_prediction('home/' + data['image_path'])
-            data['confussion_matrix'] = 
+            #data['confussion_matrix'] = 
 
 
 
