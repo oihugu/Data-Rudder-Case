@@ -6,9 +6,11 @@ import json
 
 def main():
     """Run administrative tasks."""
-    key = json.load(open('./keys.json'))['django']
-    os.environ.setdefault('DJANGO_SECRET_KEY', key)
+    keys = json.load(open('./keys.json'))
+    os.environ.setdefault('DJANGO_SECRET_KEY', keys['django'])
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DataRudderCase.settings')
+    os.environ.setdefault('TWITTER_CONSUMER_KEY', keys['twitter']['consumer_key'])
+    os.environ.setdefault('TWITTER_CONSUMER_SECRET', keys['twitter']['consumer_secret'])
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
